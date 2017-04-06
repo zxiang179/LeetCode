@@ -1,4 +1,4 @@
-package zx.leetcode;
+package zx.leetcode.apri;
 
 import org.junit.Test;
 
