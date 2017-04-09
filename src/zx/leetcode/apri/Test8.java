@@ -27,12 +27,28 @@ public class Test8 {
         return resultList;
     }
     
+    public List<Integer> findDisappearedNumbers2(int[] nums) {
+    	int n=nums.length;
+    	int val=0;
+    	List<Integer> resultList = new ArrayList<Integer>();
+    	for(int i=0;i<nums.length;i++){
+    		val = Math.abs(nums[i]);
+    		if(nums[val-1]>0){
+    			nums[val-1]=-nums[val-1];
+    		}
+    	}
+    	for(int i=0;i<n;i++){
+    		if(nums[i]>0)resultList.add(i+1);
+    	}
+    	return resultList;
+    }
+    
     @Test
     public void test(){
     	Test8 test8 = new Test8();
     	int[] nums={4,3,2,7,8,2,3,1};
     	List<Integer> list = new ArrayList<Integer>();
-    	list=test8.findDisappearedNumbers(nums);
+    	list=test8.findDisappearedNumbers2(nums);
     	System.out.println(list.toString());
     }
 
