@@ -51,4 +51,8 @@ public class Test9 {
 	    return false;
     }
 	
+	public boolean detectCapitalUse2(String word) {
+	    return word.matches("[A-Z]+|[a-z]+|[A-Z][a-z]+");
+	}
+	
 }
