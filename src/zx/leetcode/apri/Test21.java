@@ -1,4 +1,5 @@
 package zx.leetcode.apri;
+
 /**
  * 541. Reverse String II
  * @author Carl_Hugo
@@ -14,7 +15,26 @@ public class Test21 {
 	 * @return
 	 */
     public String reverseStr(String s, int k) {
+    	char[] charArray = s.toCharArray();
+    	char temp;
+    	for(int i=0;i<s.length();i=i+2*k){
+    		int len= Math.min(k, s.length()-i);
+    		int l=len+i-1;
+    		for(int j=i;j<l;j++,l--){
+    			temp=charArray[j];
+    			charArray[j]=charArray[l];
+    			charArray[l]=temp;
+    		}
+    	}
+        return String.valueOf(charArray);
         
     }
+    
+    public static void main(String[] args) {
+    	Test21 test21 = new Test21();
+    	System.out.println("abcdefg");
+		System.out.println(test21.reverseStr("abcdefg",2));
+	}
+    
 
 }
