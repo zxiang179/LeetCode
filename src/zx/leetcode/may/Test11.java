@@ -15,7 +15,8 @@ public class Test11 {
 	 * @return
 	 */
     public int diameterOfBinaryTree(TreeNode root) {
-        return maxLength(root);
+        maxLength(root);
+        return max;
     }
     
     int max = 0;
