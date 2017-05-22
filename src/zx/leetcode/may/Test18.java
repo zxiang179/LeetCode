@@ -1,10 +1,13 @@
 package zx.leetcode.may;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 
 
 /**
@@ -96,8 +99,38 @@ public class Test18 {
 		return res;
 	}
 	
+	public String frequencySort3(String s) {
+	    Map<Character,Integer> map = new HashMap<Character,Integer>();
+	    ArrayList<Character>[] bucket = new ArrayList[s.length()+1];
+	    List<Character> resList = new ArrayList<Character>();
+	    String str = "";
+	    for(int i=0;i<s.length();i++){
+	    	map.put(s.charAt(i), map.getOrDefault(s.charAt(i), 0)+1);
+	    }
+	    Set<Entry<Character,Integer>> entrySet = map.entrySet();
+	    for(Entry<Character,Integer> es : entrySet){
+	        Character key = es.getKey();
+	        int value = es.getValue();
+	        if(bucket[value]==null){
+	        	bucket[value] = new ArrayList<Character>();
+	        }
+	        for(int i=0;i<value;i++){
+	        	bucket[value].add(key);	
+	        }
+	    }
+	    for(int i=bucket.length-1;i>=0;i--){
+	    	if(bucket[i]!=null){
+	    		resList.addAll(bucket[i]);
+	    	}
+	    }
+	    for(int i=0;i<resList.size();i++){
+	    	str+=resList.get(i);
+	    }
+	    return str;
+	}
+	
 	
 	public static void main(String[] args) {
-		System.out.println(new Test18().frequencySort2("2a554442f544asfasssffffasss"));
+		System.out.println(new Test18().frequencySort3("tree"));
 	}
 }
