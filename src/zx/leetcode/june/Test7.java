@@ -10,8 +10,8 @@ public class Test7 {
         if(t1==null&&t2==null)return null;
         int val = (t1!=null?t1.val:0) + (t2!=null?t2.val:0);
         TreeNode node = new TreeNode(val);
-        node.left = mergeTrees(t1.left==null?null:t1.left,t2.left==null?null:t2.left);
-        node.right = mergeTrees(t1.right==null?null:t1.right,t2.right==null?null:t2.right);
+        node.left = mergeTrees(t1==null?null:t1.left,t2==null?null:t2.left);
+        node.right = mergeTrees(t1==null?null:t1.right,t2==null?null:t2.right);
         return node;
     }
 	
