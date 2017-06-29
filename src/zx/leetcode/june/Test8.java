@@ -10,6 +10,11 @@ import java.util.Map;
  */
 public class Test8 {
 	
+	/**
+	 * 相邻差一
+	 * @param nums
+	 * @return
+	 */
     public int findLHS(int[] nums) {
     	Map<Integer,Integer> map = new HashMap<Integer,Integer>();
     	for(int i:nums){
