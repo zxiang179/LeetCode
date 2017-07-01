@@ -17,6 +17,8 @@ public class Test13 {
         List<List<Integer>> resultList = new ArrayList<List<Integer>>();
         Queue<TreeNode> queue = new LinkedList<TreeNode>();
         Stack<List> stack = new Stack<List>();
+        
+        if(root==null)return resultList;
         queue.add(root);
         
         while(!queue.isEmpty()){
