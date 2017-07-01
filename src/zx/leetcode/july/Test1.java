@@ -7,7 +7,6 @@ package zx.leetcode.july;
 public class Test1 {
 	
     /**
-     * 
      * @param headA
      * @param headB
      * @return
