@@ -41,5 +41,9 @@ public class Test4 {
     	}
     	return l2;
     }
+    
+    public static void main(String[] args) {
+		new Test4().generateParenthesis(3);
+	}
 
 }
