@@ -7,7 +7,6 @@ package zx.leetcode.july;
  */
 public class Test7 {
 	
-	
 	/**
 	 * flowers cannot be planted in adjacent plots
 	 * @param flowerbed
