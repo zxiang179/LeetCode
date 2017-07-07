@@ -11,7 +11,22 @@ import java.util.Queue;
  */
 public class Test11 {
 	
-    public int rob(TreeNode root) {
+	public int rob(TreeNode root) {
+		if(root==null)return 0;
+		return Math.max(nodeInclude(root), nodeExclude(root));
+	}
+	
+	public int nodeInclude(TreeNode node){
+		if(node==null)return 0;
+		return nodeExclude(node.left)+nodeExclude(node.right)+node.val;
+	}
+	
+	public int nodeExclude(TreeNode node){
+		if(node==null)return 0;
+		return rob(node.left)+rob(node.right);
+	}
+	
+    public int rob2(TreeNode root) {
         Queue<TreeNode> queue = new LinkedList<TreeNode>();
         //记录每一层数之和
         ArrayList levelSumList = new ArrayList();
