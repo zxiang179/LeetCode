@@ -31,7 +31,6 @@ public class Test14 {
         	}
         }
 	}
-
 	public static void main(String[] args) {
 		new Test14().findCircleNum(new int[][]{{1,1,0},{1,1,0},{0,0,1}});
 	}
