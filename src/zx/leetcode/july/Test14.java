@@ -26,7 +26,9 @@ public class Test14 {
 	public void dfs(int[][] M,int[] visited,int i){
 		for(int j=0;j<M.length;j++){
         	if(M[i][j]==1&&visited[j]==0){
+        		//访问初始结点v，并标记结点v为已访问
         		visited[j]=1;
+        		//查找结点v的第一个邻接结点w,若w存在，则继续执行DFS，否则算法结束
         		dfs(M,visited,j);
         	}
         }
