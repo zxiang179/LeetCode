@@ -10,6 +10,14 @@ public class Test23 {
 	 * @param head
 	 * @return
 	 */
+	/*public ListNode insertionSortList2(ListNode head){
+		ListNode first = null;
+		if(head==null)return null;
+		
+		
+	}*/
+	
+	
     public ListNode insertionSortList(ListNode head) {
     	//默认头结点没有元素
     	//无序队列的首元素
@@ -56,11 +64,11 @@ public class Test23 {
         	follow = head;
             first = head.next;
         }
-        return head;
+        return head.next;
     }
 
     public static void main(String[] args) {
-		int[] arr = {1};
+		int[] arr = {2};
 		ListNode head = new ListNode(0);
 		ListNode temp = head;
 		
@@ -69,7 +77,11 @@ public class Test23 {
 			temp.next=node;
 			temp=temp.next;
 		}
-		new Test23().insertionSortList(head);
+		ListNode node = new Test23().insertionSortList(head);
+		while(node!=null){
+			System.out.println(node.val);
+			node = node.next;
+		}
 	}
 }
 
