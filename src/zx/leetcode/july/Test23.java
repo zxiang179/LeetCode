@@ -10,12 +10,27 @@ public class Test23 {
 	 * @param head
 	 * @return
 	 */
-	/*public ListNode insertionSortList2(ListNode head){
-		ListNode first = null;
+	public ListNode insertionSortList2(ListNode head){
+		ListNode helper = new ListNode(0);//pre head
+		ListNode cur = head;
+		ListNode pre = helper;
+		ListNode next = null;
 		if(head==null)return null;
 		
+		while(cur!=null){
+			next = cur.next;
+			while(pre.next!=null&&pre.next.val<cur.val){
+				pre = pre.next;
+			}
+			//insert between pre and pre.next
+			cur.next = pre.next;
+			pre.next = cur;
+			pre = helper;
+			cur = next;
+		}
+		return helper.next;
 		
-	}*/
+	}
 	
 	
     public ListNode insertionSortList(ListNode head) {
