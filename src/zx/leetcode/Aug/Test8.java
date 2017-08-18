@@ -40,7 +40,7 @@ public class Test8 {
         //链表就地逆序
         second = temp;
         ListNode tempHead = new ListNode(0);
-        tempHead.next = second;
+        tempHead.next = null;
         while(second!=null){
         	//抽出r
         	ListNode r = second;
