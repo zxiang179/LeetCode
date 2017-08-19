@@ -42,9 +42,9 @@ public class Test13 {
     }
     
     static class TreeNode{
+    	int val;
     	TreeNode left;
     	TreeNode right;
-    	int val;
     	TreeNode(int x){
     		val=x;
     	}
