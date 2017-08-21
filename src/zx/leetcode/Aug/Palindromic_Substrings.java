@@ -16,9 +16,9 @@ public class Palindromic_Substrings {
     public int countSubstrings(String s) {
     	if(s==null||s.length()==0)return 0;
     	for(int i=0;i<s.length();i++){
-    		//even
+    		//寻找奇数长度的回文子串
     		extendPalindromic(s,i,i);
-    		//odd
+    		//寻找偶数长度的回文子串
     		extendPalindromic(s,i,i+1);
     	}
     	return count;
