@@ -6,7 +6,44 @@ package zx.leetcode.Aug;
  */
 public class Test18 {
 	
-    public int[][] imageSmoother(int[][] M) {
+	public int[][] imageSmoother(int[][] M){
+		if(M==null)return new int[0][];
+		int rows = M.length;
+		if(rows==0)return new int[0][];
+		int cols = M[0].length;
+		
+		int[][] res = new int[rows][cols];
+		for(int i=0;i<rows;i++){
+			for(int j=0;j<cols;j++){
+				int count = 0;
+				int sum = 0;
+				for(int rowShift : new int[]{-1,0,1}){
+					for(int colShift : new int[]{-1,0,1}){
+						if(isValid(i+rowShift,j+colShift,rows,cols)){
+							sum+=M[i+rowShift][j+colShift];
+							count++;
+						}
+					}
+				}
+				res[i][j] = Math.floorDiv(sum, count);
+			}
+		}
+		return res;
+	}
+	
+	public boolean isValid(int row,int col,int rows,int cols){
+		if(row<0||row>=rows||col<0||col>=cols){
+			return false;
+		}
+		return true;
+	}
+	
+	/**
+	 * 方正的情况
+	 * @param M
+	 * @return
+	 */
+    public int[][] imageSmoother2(int[][] M) {
     	int m = M.length;
     	int n = M[0].length;
     	int[][] res = new int[m][n];
