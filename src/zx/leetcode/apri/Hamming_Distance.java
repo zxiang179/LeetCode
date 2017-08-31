@@ -7,7 +7,7 @@ import org.junit.Test;
  * @author Carl_Hugo
  * 在信息论中，两个等长字符串之间的汉明距离是两个字符串对应位置的不同字符的个数。
  */
-public class Test1 {
+public class Hamming_Distance {
 	
 	public int hammingDistance(int x, int y) {
         int xor = x^y;
@@ -20,7 +20,7 @@ public class Test1 {
 	
 	@Test
 	public void test(){
-		Test1 test1 = new Test1();
+		Hamming_Distance test1 = new Hamming_Distance();
 		System.out.println(test1.hammingDistance(1, 4));
 	}
 
