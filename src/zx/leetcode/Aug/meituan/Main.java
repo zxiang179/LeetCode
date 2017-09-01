@@ -12,6 +12,7 @@ public class Main {
 			input[i]=scanner.nextInt();
 		}
 		int k = scanner.nextInt();
+		
 		int maxLen = 0;
 		for(int i=0;i<count;i++){
 			int numI = input[i];
