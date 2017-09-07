@@ -10,7 +10,52 @@ import java.util.List;
  */
 public class Minimum_Time_Difference {
 	
+	boolean[] mark = new boolean[24*60];
+	/**
+	 * 24*60=1440种情况
+	 * @param timePoints
+	 * @return
+	 */
 	public int findMinDifference(List<String> timePoints) {
+		for(int i=0;i<timePoints.size();i++){
+			String a = timePoints.get(i);
+			String[] aSplit = a.split("\\:");
+	    	int[] aArr = new int[2];
+	    	aArr[0] = Integer.valueOf(aSplit[0]);
+	    	aArr[1] = Integer.valueOf(aSplit[1]);
+	    	if(mark[aArr[0]*60+aArr[1]] ==true){
+	    		return 0;
+	    	}else{
+	    		mark[aArr[0]*60+aArr[1]] =true;
+	    	}
+		}
+		int prev = -1;
+		int first = -1;
+		int last = -1;
+		int minMinutes = Integer.MAX_VALUE;
+		for(int i=0;i<24*60;i++){
+			int minDiff = Integer.MAX_VALUE;
+			if(mark[i]==true){
+				if(prev==-1){
+					prev=i;
+					first = i;
+				}else{
+					minDiff = i - prev;
+					prev = i;
+					last = i;
+				}
+				minMinutes = Math.min(minMinutes, minDiff);
+			}
+		}
+		return Math.min(minMinutes, first+24*60-last);
+	}
+	
+	public void convert2MarkArr(String a){
+		
+    	
+	}
+	
+	public int findMinDifference2(List<String> timePoints) {
     	int minMinutes = Integer.MAX_VALUE;
     	for(int i=0;i<timePoints.size();i++){
     		for(int j=i+1;j<timePoints.size();j++){
@@ -58,9 +103,8 @@ public class Minimum_Time_Difference {
     
     public static void main(String[] args) {
     	ArrayList<String> list = new ArrayList<String>();
-    	list.add("01:39");
-    	list.add("10:26");
-    	list.add("21:43");
+    	list.add("23:59");
+    	list.add("00:00");
 		System.out.println(new Minimum_Time_Difference().findMinDifference(list));
 	}
     
