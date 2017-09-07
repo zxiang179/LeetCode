@@ -11,6 +11,7 @@ import java.util.List;
 public class Minimum_Time_Difference {
 	
 	boolean[] mark = new boolean[24*60];
+	
 	/**
 	 * 24*60=1440种情况
 	 * @param timePoints
