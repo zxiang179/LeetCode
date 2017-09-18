@@ -17,9 +17,6 @@ public class GetQueueTime {
 	public static List<Z2F> arr5 = new ArrayList<Z2F>();
 	public static List<Z2F> arr6 = new ArrayList<Z2F>();
 	
-	
-	
-	
 	public static void main(String[] args) {
 		double[][] z2f = new double[18][60];
 		//各个z的聚类结果

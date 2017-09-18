@@ -25,6 +25,7 @@ public class OptZ2F {
 	static List<Z2F> listZ5 = new ArrayList<Z2F>();
 	static List<Z2F> listZ6 = new ArrayList<Z2F>();
 	//zLeft list
+	static List<ZLeft> zLeftList =  new ArrayList<ZLeft>();
 	static List<ZLeft> z1LeftList = new ArrayList<ZLeft>();
 	static List<ZLeft> z2LeftList = new ArrayList<ZLeft>();
 	static List<ZLeft> z3LeftList = new ArrayList<ZLeft>();
@@ -44,12 +45,9 @@ public class OptZ2F {
 		getZ2FDis();
 		getZCarInput();
 		//将24条路径按照出发点Z分类
-		//求出最长时间
-		double maxZ2F = 0;
 		for(int i=0;i<list.size();i++){
 			Z2F z2f = list.get(i);
 			String z = z2f.getZ();
-			if(z2f.getDis()>maxZ2F)maxZ2F = z2f.getDis();
 			switch(z){
 				case "Z1":listZ1.add(z2f);break;
 				case "Z2":listZ2.add(z2f);break;
@@ -277,9 +275,48 @@ public class OptZ2F {
 			}
 			
 		}
+		
+		double longestTime = 0;
 		for(String s : resMap.keySet()){
 			System.out.println("key="+s+"  value="+resMap.get(s));
-			
+		}
+		System.out.println();
+		
+		for(int i=0;i<zLeftList.size();i++){
+			ZLeft zLeft = zLeftList.get(i);
+			double dis1 = zLeft.getCanLeftTime();
+			double dis2 = 0;
+			double dis = 0;
+			String type = zLeft.getType();
+			String FType = resMap.get(type);
+			for(int j=0;j<list.size();j++){
+				if(list.get(j).getF().equals(FType)){
+					dis2 = list.get(j).getDis();
+				}
+			}
+			dis = dis1+dis2;
+			if(longestTime<dis&&dis<100){
+				longestTime = dis;
+			}
+		}
+		
+		for(int i=0;i<zLeftList.size();i++){
+			ZLeft zLeft = zLeftList.get(i);
+			double shouldLeftTime = zLeft.getShouldLeftTime();
+			if(shouldLeftTime==0){
+				//求出耗时，离开时间等于最长时间-耗时
+				double costTime = 0;
+				String type = zLeft.getType();
+				String F = resMap.get(type);
+				for(int j=0;j<list.size();j++){
+					Z2F z2f = list.get(j);
+					if(z2f.getF().equals(F)){
+						costTime = z2f.getDis();
+					}
+				}
+				//应该离开的时间
+				zLeft.setShouldLeftTime(longestTime-costTime);
+			}
 		}
 		
 		
@@ -339,6 +376,10 @@ public class OptZ2F {
 	            		case 4:zLeft.setZ("Z4");zLeft.setType(split[0]);zLeft.setCanLeftTime(Double.valueOf(split[2]));zLeft.setLoadTime(Double.valueOf(split[1]));z4LeftList.add(zLeft);break;
 	            		case 5:zLeft.setZ("Z5");zLeft.setType(split[0]);zLeft.setCanLeftTime(Double.valueOf(split[2]));zLeft.setLoadTime(Double.valueOf(split[1]));z5LeftList.add(zLeft);break;
 	            		case 6:zLeft.setZ("Z6");zLeft.setType(split[0]);zLeft.setCanLeftTime(Double.valueOf(split[2]));zLeft.setLoadTime(Double.valueOf(split[1]));z6LeftList.add(zLeft);break;
+            		}
+            		zLeftList.add(zLeft);
+            		if(zLeft.getCanLeftTime()!=100){
+            			zLeft.setShouldLeftTime(zLeft.getCanLeftTime());
             		}
             	}else{
             		countZ++;
