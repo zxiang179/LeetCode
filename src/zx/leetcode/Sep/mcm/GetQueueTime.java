@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class GetWaitTime {
+public class GetQueueTime {
 	
 	public static List<Z2F> arr1 = new ArrayList<Z2F>();
 	public static List<Z2F> arr2 = new ArrayList<Z2F>();
@@ -349,11 +349,6 @@ public class GetWaitTime {
 		System.out.println();
 	}
 	
-	public static void  DiaoDuInit(){
-		
-		
-		
-	}
 	
 	public static void getZCarInput(){
 		File file = new File("G:/MCM/zCar.txt");
