@@ -1,4 +1,4 @@
-package zx.leetcode.Sep.mcm;
+package zx.leetcode.Sep.mcm.dierwen;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -16,6 +16,8 @@ public class GetQueueTime {
 	public static List<Z2F> arr4 = new ArrayList<Z2F>();
 	public static List<Z2F> arr5 = new ArrayList<Z2F>();
 	public static List<Z2F> arr6 = new ArrayList<Z2F>();
+	public static List<Z2F> arr7 = new ArrayList<Z2F>();
+	public static List<Z2F> arr8 = new ArrayList<Z2F>();
 	
 	public static void main(String[] args) {
 		double[][] z2f = new double[18][60];
@@ -29,6 +31,8 @@ public class GetQueueTime {
 		Collections.sort(arr4,comp);
 		Collections.sort(arr5,comp);
 		Collections.sort(arr6,comp);
+		Collections.sort(arr7,comp);
+		Collections.sort(arr8,comp);
 		//调度 到达时间初始化
 		
 		//第一列为到达时间 第二列为允许时间 第三列为装载时间 第四列为离开时间
@@ -38,6 +42,8 @@ public class GetQueueTime {
 		double[][] diaodu4 = new double[arr4.size()][4];
 		double[][] diaodu5 = new double[arr5.size()][4];
 		double[][] diaodu6 = new double[arr6.size()][4];
+		double[][] diaodu7 = new double[arr7.size()][4];
+		double[][] diaodu8 = new double[arr8.size()][4];
 		for(int i=0;i<arr1.size();i++){
 			diaodu1[i][0] = arr1.get(i).getDis();
 		}
@@ -55,6 +61,12 @@ public class GetQueueTime {
 		}
 		for(int i=0;i<arr6.size();i++){
 			diaodu6[i][0] = arr6.get(i).getDis();
+		}
+		for(int i=0;i<arr7.size();i++){
+			diaodu7[i][0] = arr7.get(i).getDis();
+		}
+		for(int i=0;i<arr8.size();i++){
+			diaodu8[i][0] = arr8.get(i).getDis();
 		}
 		
 		//arr1
@@ -348,6 +360,102 @@ public class GetQueueTime {
 			}
 		}
 		
+		//7
+		for(int i=0;i<arr7.size();i++){
+			if(i==0){
+				//第一个到达的装载时间和允许时间相同
+				diaodu7[i][1] =diaodu7[i][0];
+				diaodu7[i][2] =diaodu7[i][0];
+				if(arr7.size()<=2){
+					diaodu7[i][3] = 100d;
+				}else{
+					//离开时间为装载时间+0.166666
+					diaodu7[i][3] = diaodu7[i][2]+0.166666; 
+				}
+			}else if(i==1){
+				//第二个到达 允许时间为到达时间
+				diaodu7[i][1] = diaodu7[i][0];
+				//装载时间为Max(允许时间,上一辆的离开时间,到达时间)
+				diaodu7[i][2] = Math.max(diaodu7[i-1][3],diaodu7[i][1]);
+				diaodu7[i][2] = Math.max(diaodu7[i][2],diaodu7[i][0]);
+				if(diaodu7[i][2]==100){
+					diaodu7[i][2] = diaodu7[i-1][2] + 0.166666*2; 
+					diaodu7[i][2] = Math.max(diaodu7[i][2], diaodu7[i][0]);
+				}
+				if(arr7.size()<=2){
+					diaodu7[i][3] = 100d;
+				}else{
+					//离开时间为装载时间+0.166666
+					diaodu7[i][3] = diaodu7[i][2]+0.166666; 
+				}
+			}else{
+				//允许时间为上上辆车的离开时间
+				diaodu7[i][1] = diaodu7[i-2][3];
+				//装载时间为Max(允许时间,上一辆的离开时间)
+				diaodu7[i][2] = Math.max(diaodu7[i-1][3],diaodu7[i][1]);
+				diaodu7[i][2] = Math.max(diaodu7[i][2],diaodu7[i][0]);
+				if(diaodu7[i][2]==100){
+					diaodu7[i][2] = diaodu7[i-1][2] + 0.166666*2; 
+					diaodu7[i][2] = Math.max(diaodu7[i][2], diaodu7[i][0]);
+				}
+				//
+				if(arr7.size()-i<=2){
+					diaodu7[i][3] = 100d;
+				}else{
+					//离开时间为装载时间+0.166666
+					diaodu7[i][3] = diaodu7[i][2]+0.166666; 
+				}
+			}
+		}
+		
+		//8
+		for(int i=0;i<arr8.size();i++){
+			if(i==0){
+				//第一个到达的装载时间和允许时间相同
+				diaodu8[i][1] =diaodu8[i][0];
+				diaodu8[i][2] =diaodu8[i][0];
+				if(arr8.size()<=2){
+					diaodu8[i][3] = 100d;
+				}else{
+					//离开时间为装载时间+0.166666
+					diaodu8[i][3] = diaodu8[i][2]+0.166666; 
+				}
+			}else if(i==1){
+				//第二个到达 允许时间为到达时间
+				diaodu8[i][1] = diaodu8[i][0];
+				//装载时间为Max(允许时间,上一辆的离开时间,到达时间)
+				diaodu8[i][2] = Math.max(diaodu8[i-1][3],diaodu8[i][1]);
+				diaodu8[i][2] = Math.max(diaodu8[i][2],diaodu8[i][0]);
+				if(diaodu8[i][2]==100){
+					diaodu8[i][2] = diaodu8[i-1][2] + 0.166666*2; 
+					diaodu8[i][2] = Math.max(diaodu8[i][2], diaodu8[i][0]);
+				}
+				if(arr8.size()<=2){
+					diaodu8[i][3] = 100d;
+				}else{
+					//离开时间为装载时间+0.166666
+					diaodu8[i][3] = diaodu8[i][2]+0.166666; 
+				}
+			}else{
+				//允许时间为上上辆车的离开时间
+				diaodu8[i][1] = diaodu8[i-2][3];
+				//装载时间为Max(允许时间,上一辆的离开时间)
+				diaodu8[i][2] = Math.max(diaodu8[i-1][3],diaodu8[i][1]);
+				diaodu8[i][2] = Math.max(diaodu8[i][2],diaodu8[i][0]);
+				if(diaodu8[i][2]==100){
+					diaodu8[i][2] = diaodu8[i-1][2] + 0.166666*2; 
+					diaodu8[i][2] = Math.max(diaodu8[i][2], diaodu8[i][0]);
+				}
+				//
+				if(arr8.size()-i<=2){
+					diaodu8[i][3] = 100d;
+				}else{
+					//离开时间为装载时间+0.166666
+					diaodu8[i][3] = diaodu8[i][2]+0.166666; 
+				}
+			}
+		}
+		
 		
 		
 		//print arr1
@@ -397,10 +505,27 @@ public class GetQueueTime {
 			System.out.println();
 		}
 		System.out.println();
+		
 		for(int i=0;i<arr6.size();i++){
 			System.out.print(arr6.get(i).getName()+" ");
 			for(int j=0;j<4;j++){
 				System.out.print(diaodu6[i][j]+" ");
+			}
+			System.out.println();
+		}
+		System.out.println();
+		for(int i=0;i<arr7.size();i++){
+			System.out.print(arr7.get(i).getName()+" ");
+			for(int j=0;j<4;j++){
+				System.out.print(diaodu7[i][j]+" ");
+			}
+			System.out.println();
+		}
+		System.out.println();
+		for(int i=0;i<arr8.size();i++){
+			System.out.print(arr8.get(i).getName()+" ");
+			for(int j=0;j<4;j++){
+				System.out.print(diaodu8[i][j]+" ");
 			}
 			System.out.println();
 		}
@@ -411,7 +536,8 @@ public class GetQueueTime {
 	
 	public static void getZCarInput(){
 		//从out中选取部分 等同于out1.txt
-		File file = new File("G:/MCM/zCar.txt");
+//		File file = new File("G:/MCM/zCar.txt");
+		File file = new File("G:/MCM/getOut/out10.txt");
         StringBuilder result = new StringBuilder();
         double[] resDou = new double[360];
         try{
@@ -443,6 +569,8 @@ public class GetQueueTime {
     	            			case 4:arr4.add(z2f);break;
     	            			case 5:arr5.add(z2f);break;
     	            			case 6:arr6.add(z2f);break;
+    	            			case 7:arr7.add(z2f);break;
+    	            			case 8:arr8.add(z2f);break;
                 			}
                 		}
                 	}

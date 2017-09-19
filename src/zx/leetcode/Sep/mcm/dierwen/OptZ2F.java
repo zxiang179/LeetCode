@@ -1,4 +1,4 @@
-package zx.leetcode.Sep.mcm;
+package zx.leetcode.Sep.mcm.dierwen;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -14,7 +14,7 @@ import java.util.Map;
 public class OptZ2F {
 	
 	//规划后24辆车从z到f
-	static int[][] isZ2F = new int[18][36];
+	static int[][] isZ2F = new int[24][36];
 	//记录z2f
 	static List<Z2F> list = new ArrayList<Z2F>();
 	//将z1-z6出发的点保存在对应的数组中
@@ -24,6 +24,8 @@ public class OptZ2F {
 	static List<Z2F> listZ4 = new ArrayList<Z2F>();
 	static List<Z2F> listZ5 = new ArrayList<Z2F>();
 	static List<Z2F> listZ6 = new ArrayList<Z2F>();
+	static List<Z2F> listZ7 = new ArrayList<Z2F>();
+	static List<Z2F> listZ8 = new ArrayList<Z2F>();
 	//zLeft list
 	static List<ZLeft> zLeftList =  new ArrayList<ZLeft>();
 	static List<ZLeft> z1LeftList = new ArrayList<ZLeft>();
@@ -32,20 +34,28 @@ public class OptZ2F {
 	static List<ZLeft> z4LeftList = new ArrayList<ZLeft>();
 	static List<ZLeft> z5LeftList = new ArrayList<ZLeft>();
 	static List<ZLeft> z6LeftList = new ArrayList<ZLeft>();
+	static List<ZLeft> z7LeftList = new ArrayList<ZLeft>();
+	static List<ZLeft> z8LeftList = new ArrayList<ZLeft>();
+	
 	
 	//index 和 F的对应关系
 	//第一问选取的点的对应关系
-	static String[] i2FMap = {"F01","F02","F07","F08","F09","F10","F11","F12","F13","F14","F15","F16","F17","F18","F19","F20","F21","F22","F23","F27","F28","F32","F33","F36","F40","F48","F50","F51","F52","F53","F54","F55","F56","F57","F59","F60"};
+//	static String[] i2FMap = {"F01","F02","F07","F08","F09","F10","F11","F12","F13","F14","F15","F16","F17","F18","F19","F20","F21","F22","F23","F27","F28","F32","F33","F36","F40","F48","F50","F51","F52","F53","F54","F55","F56","F57","F59","F60"};
 	//验证第二问
-    //D_1~D_5
-	//F05 F07 F08 F09 F010 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F26 F27 F28 F30 F31 F32 F33 F40 F48 F49 F51 F52 F53 F55 F56 F57 F59 F60 
-	//F05 F07 F08 F09 F010 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F26 F27 F28 F31 F32 F33 F36 F40 F48 F50 F51 F52 F53 F55 F56 F57 F59 F60  
-	//F04 F05 F07 F08 F09 F010 F11 F12 F13 F14 F15 F16 F17 F18 F20 F22 F23 F26 F31 F32 F33 F36 F37 F39 F40 F48 F50 F51 F52 F53 F54 F55 F56 F57 F59 F60
-    //F04 F05 F07 F08 F09 F010 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F27 F28 F31 F32 F33 F40 F48 F50 F51 F52 F53 F54 F55 F56 F57 F59 F60
-	//F05 F07 F08 F09 F010 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F26 F27 F28 F30 F31 F32 F33 F40 F48 F49 F51 F52 F53 F55 F56 F57 F59 F60
+	static String[] i2FMap1 = {"F05","F07","F08","F09","F010","F11","F12","F13","F14","F15","F16","F17","F18","F19","F20","F21","F22","F23","F26","F27","F28","F30","F31","F32","F33","F40","F48","F49","F51","F52","F53","F55","F56","F57","F59","F60"};
+	static String[] i2FMap2= {"F05","F07","F08","F09","F010","F11","F12","F13","F14","F15","F16","F17","F18","F19","F20","F21","F22","F23","F26","F27","F28","F31","F32","F33","F36","F40","F48","F50","F51","F52","F53","F55","F56","F57","F59","F60"};
+	static String[] i2FMap3 = {"F04","F05","F07","F08","F09","F010","F11","F12","F13","F14","F15","F16","F17","F18","F20","F22","F23","F26","F31","F32","F33","F36","F37","F39","F40","F48","F50","F51","F52","F53","F54","F55","F56","F57","F59","F60"};
+	static String[] i2FMap4 = {"F04","F05","F07","F08","F09","F010","F11","F12","F13","F14","F15","F16","F17","F18","F19","F20","F21","F22","F23","F27","F28","F31","F32","F33","F40","F48","F50","F51","F52","F53","F54","F55","F56","F57","F59","F60"};
+	static String[] i2FMap5 = {"F05","F07","F08","F09","F010","F11","F12","F13","F14","F15","F16","F17","F18","F19","F20","F21","F22","F23","F26","F27","F28","F30","F31","F32","F33","F40","F48","F49","F51","F52","F53","F55","F56","F57","F59","F60"};
+	static String[] i2FMap6 = {"F01","F07","F08","F09","F12","F13","F14","F15","F16","F17","F18","F19","F20","F21","F22","F23","F26","F27","F28","F31","F32","F33","F36","F37","F39","F40","F48","F49","F51","F52","F53","F55","F56","F57","F59","F60"};
+	static String[] i2FMap7 = {"F01","F05","F07","F08","F09","F010","F11","F12","F13","F14","F15","F16","F17","F18","F19","F20","F21","F22","F23","F26","F27","F28","F29","F31","F32","F33","F40","F48","F51","F52","F53","F55","F56","F57","F59","F60"};
+	static String[] i2FMap8 = {"F01","F02","F08","F09","F010","F12","F13","F14","F15","F16","F17","F18","F19","F20","F21","F22","F23","F26","F27","F28","F32","F33","F36","F37","F39","F40","F48","F50","F51","F52","F53","F55","F56","F57","F59","F60"};
+	static String[] i2FMap9 = {"F01","F02","F07","F08","F09","F010","F11","F12","F13","F14","F15","F16","F17","F18","F19","F20","F21","F22","F23","F27","F28","F29","F32","F33","F36","F40","F48","F50","F51","F52","F53","F55","F56","F57","F59","F60"};
+	static String[] i2FMap = {"F01","F02","F03","F08","F09","F010","F12","F13","F14","F15","F16","F17","F18","F19","F20","F21","F22","F23","F27","F28","F33","F36","F37","F39","F40","F48","F50","F51","F52","F53","F54","F55","F56","F57","F59","F60"};
+	
 	
 	//存储z-f的路径
-	static double[][] z2fMap = new double[18][36];
+	static double[][] z2fMap = new double[24][36];
 	
 	public static void main(String[] args) {
 		//得到上一步的可以离开时间
@@ -64,6 +74,8 @@ public class OptZ2F {
 				case "Z4":listZ4.add(z2f);break;
 				case "Z5":listZ5.add(z2f);break;
 				case "Z6":listZ6.add(z2f);break;
+				case "Z7":listZ7.add(z2f);break;
+				case "Z8":listZ8.add(z2f);break;
 			}
 		}
 		Comparator comp1 = new ComparatorI();
@@ -179,6 +191,44 @@ public class OptZ2F {
 		Collections.sort(listZ6C,comp1);
 		
 		
+		//Z7
+		Collections.sort(listZ7,comp1);
+		List<Z2F> listZ7A = new ArrayList<Z2F>();
+		List<Z2F> listZ7B = new ArrayList<Z2F>();
+		List<Z2F> listZ7C = new ArrayList<Z2F>();
+		for(int i=0;i<listZ7.size();i++){
+			Z2F z2f = listZ7.get(i);
+			String type = z2f.getType();
+			switch(type){
+				case "A":listZ7A.add(z2f);break;
+				case "B":listZ7B.add(z2f);break;
+				case "C":listZ7C.add(z2f);break;
+			}
+		}
+		Collections.sort(listZ7A,comp1);
+		Collections.sort(listZ7B,comp1);
+		Collections.sort(listZ7C,comp1);
+		
+		
+		//Z8
+		Collections.sort(listZ8,comp1);
+		List<Z2F> listZ8A = new ArrayList<Z2F>();
+		List<Z2F> listZ8B = new ArrayList<Z2F>();
+		List<Z2F> listZ8C = new ArrayList<Z2F>();
+		for(int i=0;i<listZ8.size();i++){
+			Z2F z2f = listZ8.get(i);
+			String type = z2f.getType();
+			switch(type){
+				case "A":listZ8A.add(z2f);break;
+				case "B":listZ8B.add(z2f);break;
+				case "C":listZ8C.add(z2f);break;
+			}
+		}
+		Collections.sort(listZ8A,comp1);
+		Collections.sort(listZ8B,comp1);
+		Collections.sort(listZ8C,comp1);
+		
+		
 		//根据可以离开的时间进行递减排序
 		Collections.sort(z1LeftList,comp2);
 		Collections.sort(z2LeftList,comp2);
@@ -186,6 +236,8 @@ public class OptZ2F {
 		Collections.sort(z4LeftList,comp2);
 		Collections.sort(z5LeftList,comp2);
 		Collections.sort(z6LeftList,comp2);
+		Collections.sort(z7LeftList,comp2);
+		Collections.sort(z8LeftList,comp2);
 		
 		Map<String,String> resMap = new HashMap<String,String>();
 		int z1ACount = 0;
@@ -280,6 +332,40 @@ public class OptZ2F {
 				case "A":z2f = listZ6A.get(z6ACount++);resMap.put(type, z2f.getF());break;
 				case "B":z2f = listZ6B.get(z6BCount++);resMap.put(type, z2f.getF());break;
 				case "C":z2f = listZ6C.get(z6CCount++);resMap.put(type, z2f.getF());break;
+			}
+			
+		}
+		
+		//7
+		int z7ACount = 0;
+		int z7BCount = 0;
+		int z7CCount =0;
+		for(int i=0;i<z7LeftList.size();i++){
+			ZLeft zLeft = z7LeftList.get(i);
+			String type = zLeft.getType();
+			String realType = type.substring(0, 1);
+			Z2F z2f = new Z2F();
+			switch(realType){
+				case "A":z2f = listZ7A.get(z7ACount++);resMap.put(type, z2f.getF());break;
+				case "B":z2f = listZ7B.get(z7BCount++);resMap.put(type, z2f.getF());break;
+				case "C":z2f = listZ7C.get(z7CCount++);resMap.put(type, z2f.getF());break;
+			}
+			
+		}
+		
+		//8
+		int z8ACount = 0;
+		int z8BCount = 0;
+		int z8CCount =0;
+		for(int i=0;i<z8LeftList.size();i++){
+			ZLeft zLeft = z8LeftList.get(i);
+			String type = zLeft.getType();
+			String realType = type.substring(0, 1);
+			Z2F z2f = new Z2F();
+			switch(realType){
+				case "A":z2f = listZ8A.get(z8ACount++);resMap.put(type, z2f.getF());break;
+				case "B":z2f = listZ8B.get(z8BCount++);resMap.put(type, z2f.getF());break;
+				case "C":z2f = listZ8C.get(z8CCount++);resMap.put(type, z2f.getF());break;
 			}
 			
 		}
@@ -416,8 +502,9 @@ public class OptZ2F {
 	}
 	
 	public static void getDLeftTime(){
-		//该文件通过GetQueueTime生成
-		File file = new File("G:/MCM/d-lefttime.txt");
+		//该文件通过GetQueueTime生成,保存在G:/MCM/getQueueTime/queue1.txt
+//		File file = new File("G:/MCM/d-lefttime.txt");
+		File file = new File("G:/MCM/getQueueTime/queue10.txt");
         try{
             BufferedReader br = new BufferedReader(new FileReader(file));//构造一个BufferedReader类来读取文件
             String s = null;
@@ -436,6 +523,8 @@ public class OptZ2F {
 	            		case 4:zLeft.setZ("Z4");zLeft.setType(split[0]);zLeft.setCanLeftTime(Double.valueOf(split[4]));zLeft.setLoadTime(Double.valueOf(split[3]));zLeft.setAllowTime(Double.valueOf(split[2]));zLeft.setArrTime(Double.valueOf(split[1]));z4LeftList.add(zLeft);break;
 	            		case 5:zLeft.setZ("Z5");zLeft.setType(split[0]);zLeft.setCanLeftTime(Double.valueOf(split[4]));zLeft.setLoadTime(Double.valueOf(split[3]));zLeft.setAllowTime(Double.valueOf(split[2]));zLeft.setArrTime(Double.valueOf(split[1]));z5LeftList.add(zLeft);break;
 	            		case 6:zLeft.setZ("Z6");zLeft.setType(split[0]);zLeft.setCanLeftTime(Double.valueOf(split[4]));zLeft.setLoadTime(Double.valueOf(split[3]));zLeft.setAllowTime(Double.valueOf(split[2]));zLeft.setArrTime(Double.valueOf(split[1]));z6LeftList.add(zLeft);break;
+	            		case 7:zLeft.setZ("Z7");zLeft.setType(split[0]);zLeft.setCanLeftTime(Double.valueOf(split[4]));zLeft.setLoadTime(Double.valueOf(split[3]));zLeft.setAllowTime(Double.valueOf(split[2]));zLeft.setArrTime(Double.valueOf(split[1]));z7LeftList.add(zLeft);break;
+	            		case 8:zLeft.setZ("Z8");zLeft.setType(split[0]);zLeft.setCanLeftTime(Double.valueOf(split[4]));zLeft.setLoadTime(Double.valueOf(split[3]));zLeft.setAllowTime(Double.valueOf(split[2]));zLeft.setArrTime(Double.valueOf(split[1]));z8LeftList.add(zLeft);break;
             		}
             		zLeftList.add(zLeft);
             		if(zLeft.getCanLeftTime()!=100){
@@ -524,8 +613,9 @@ public class OptZ2F {
 	
 	
 	public static void getZ2FDis(){
-		//该文件等同于D_1
-		File file = new File("G:/MCM/z-f-dis.txt");
+		//该文件等同于D_1，文件位于G:/MCM/getD/D_n_1.txt
+//		File file = new File("G:/MCM/z-f-dis.txt");
+		File file = new File("G:/MCM/getD/D_n_10.txt");
         try{
             BufferedReader br = new BufferedReader(new FileReader(file));//构造一个BufferedReader类来读取文件
             String s = null;
@@ -540,18 +630,27 @@ public class OptZ2F {
             		case "A4":countRow=3;break;
             		case "A5":countRow=4;break;
             		case "A6":countRow=5;break;
-            		case "B1":countRow=6;break;
-            		case "B2":countRow=7;break;
-            		case "B3":countRow=8;break;
-            		case "B4":countRow=9;break;
-            		case "B5":countRow=10;break;
-            		case "B6":countRow=11;break;
-            		case "C1":countRow=12;break;
-            		case "C2":countRow=13;break;
-            		case "C3":countRow=14;break;
-            		case "C4":countRow=15;break;
-            		case "C5":countRow=16;break;
-            		case "C6":countRow=17;break;
+            		case "A7":countRow=6;break;
+            		case "A8":countRow=7;break;
+            		
+            		case "B1":countRow=8;break;
+            		case "B2":countRow=9;break;
+            		case "B3":countRow=10;break;
+            		case "B4":countRow=11;break;
+            		case "B5":countRow=12;break;
+            		case "B6":countRow=13;break;
+            		case "B7":countRow=14;break;
+            		case "B8":countRow=15;break;
+            		
+            		case "C1":countRow=16;break;
+            		case "C2":countRow=17;break;
+            		case "C3":countRow=18;break;
+            		case "C4":countRow=19;break;
+            		case "C5":countRow=20;break;
+            		case "C6":countRow=21;break;
+            		case "C7":countRow=22;break;
+            		case "C8":countRow=23;break;
+            		
             		}
             		for(int i=1;i<split.length;i++){
             			z2fMap[countRow][i-1]=Double.valueOf(split[i]);
@@ -567,8 +666,9 @@ public class OptZ2F {
 	
 	
 	public static void getZCarInput(){
-		//该文件等同于F_1
-		File file = new File("G:/MCM/z-F2.txt");
+		//该文件等同于F_1,"G:/MCM/G:/getF/F_1.txt"
+//		File file = new File("G:/MCM/z-F2.txt");
+		File file = new File("G:/MCM/getF/F_10.txt");
         StringBuilder result = new StringBuilder();
         try{
             BufferedReader br = new BufferedReader(new FileReader(file));//构造一个BufferedReader类来读取文件
@@ -590,18 +690,27 @@ public class OptZ2F {
                 			case 3:z2f.setZ("Z4");z2f.setF(i2FMap[i]);z2f.setType("A");z2f.setDis(z2fMap[countRow][i]);break;
                 			case 4:z2f.setZ("Z5");z2f.setF(i2FMap[i]);z2f.setType("A");z2f.setDis(z2fMap[countRow][i]);break;
                 			case 5:z2f.setZ("Z6");z2f.setF(i2FMap[i]);z2f.setType("A");z2f.setDis(z2fMap[countRow][i]);break;
-                			case 6:z2f.setZ("Z1");z2f.setF(i2FMap[i]);z2f.setType("B");z2f.setDis(z2fMap[countRow][i]);break;
-                			case 7:z2f.setZ("Z2");z2f.setF(i2FMap[i]);z2f.setType("B");z2f.setDis(z2fMap[countRow][i]);break;
-                			case 8:z2f.setZ("Z3");z2f.setF(i2FMap[i]);z2f.setType("B");z2f.setDis(z2fMap[countRow][i]);break;
-                			case 9:z2f.setZ("Z4");z2f.setF(i2FMap[i]);z2f.setType("B");z2f.setDis(z2fMap[countRow][i]);break;
-                			case 10:z2f.setZ("Z5");z2f.setF(i2FMap[i]);z2f.setType("B");z2f.setDis(z2fMap[countRow][i]);break;
-                			case 11:z2f.setZ("Z6");z2f.setF(i2FMap[i]);z2f.setType("B");z2f.setDis(z2fMap[countRow][i]);break;
-                			case 12:z2f.setZ("Z1");z2f.setF(i2FMap[i]);z2f.setType("C");z2f.setDis(z2fMap[countRow][i]);break;
-                			case 13:z2f.setZ("Z2");z2f.setF(i2FMap[i]);z2f.setType("C");z2f.setDis(z2fMap[countRow][i]);break;
-                			case 14:z2f.setZ("Z3");z2f.setF(i2FMap[i]);z2f.setType("C");z2f.setDis(z2fMap[countRow][i]);break;
-                			case 15:z2f.setZ("Z4");z2f.setF(i2FMap[i]);z2f.setType("C");z2f.setDis(z2fMap[countRow][i]);break;
-                			case 16:z2f.setZ("Z5");z2f.setF(i2FMap[i]);z2f.setType("C");z2f.setDis(z2fMap[countRow][i]);break;
-                			case 17:z2f.setZ("Z6");z2f.setF(i2FMap[i]);z2f.setType("C");z2f.setDis(z2fMap[countRow][i]);break;
+                			case 6:z2f.setZ("Z7");z2f.setF(i2FMap[i]);z2f.setType("A");z2f.setDis(z2fMap[countRow][i]);break;
+                			case 7:z2f.setZ("Z8");z2f.setF(i2FMap[i]);z2f.setType("A");z2f.setDis(z2fMap[countRow][i]);break;
+                			
+                			
+                			case 8:z2f.setZ("Z1");z2f.setF(i2FMap[i]);z2f.setType("B");z2f.setDis(z2fMap[countRow][i]);break;
+                			case 9:z2f.setZ("Z2");z2f.setF(i2FMap[i]);z2f.setType("B");z2f.setDis(z2fMap[countRow][i]);break;
+                			case 10:z2f.setZ("Z3");z2f.setF(i2FMap[i]);z2f.setType("B");z2f.setDis(z2fMap[countRow][i]);break;
+                			case 11:z2f.setZ("Z4");z2f.setF(i2FMap[i]);z2f.setType("B");z2f.setDis(z2fMap[countRow][i]);break;
+                			case 12:z2f.setZ("Z5");z2f.setF(i2FMap[i]);z2f.setType("B");z2f.setDis(z2fMap[countRow][i]);break;
+                			case 13:z2f.setZ("Z6");z2f.setF(i2FMap[i]);z2f.setType("B");z2f.setDis(z2fMap[countRow][i]);break;
+                			case 14:z2f.setZ("Z7");z2f.setF(i2FMap[i]);z2f.setType("B");z2f.setDis(z2fMap[countRow][i]);break;
+                			case 15:z2f.setZ("Z8");z2f.setF(i2FMap[i]);z2f.setType("B");z2f.setDis(z2fMap[countRow][i]);break;
+                			
+                			case 16:z2f.setZ("Z1");z2f.setF(i2FMap[i]);z2f.setType("C");z2f.setDis(z2fMap[countRow][i]);break;
+                			case 17:z2f.setZ("Z2");z2f.setF(i2FMap[i]);z2f.setType("C");z2f.setDis(z2fMap[countRow][i]);break;
+                			case 18:z2f.setZ("Z3");z2f.setF(i2FMap[i]);z2f.setType("C");z2f.setDis(z2fMap[countRow][i]);break;
+                			case 19:z2f.setZ("Z4");z2f.setF(i2FMap[i]);z2f.setType("C");z2f.setDis(z2fMap[countRow][i]);break;
+                			case 20:z2f.setZ("Z5");z2f.setF(i2FMap[i]);z2f.setType("C");z2f.setDis(z2fMap[countRow][i]);break;
+                			case 21:z2f.setZ("Z6");z2f.setF(i2FMap[i]);z2f.setType("C");z2f.setDis(z2fMap[countRow][i]);break;
+                			case 22:z2f.setZ("Z7");z2f.setF(i2FMap[i]);z2f.setType("C");z2f.setDis(z2fMap[countRow][i]);break;
+                			case 23:z2f.setZ("Z8");z2f.setF(i2FMap[i]);z2f.setType("C");z2f.setDis(z2fMap[countRow][i]);break;
                 			}
                 			list.add(z2f);
                 		}
