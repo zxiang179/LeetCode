@@ -1,4 +1,4 @@
-package zx.leetcode.Sep.mcm;
+package zx.leetcode.Sep.mcm.disanwen;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -187,6 +187,7 @@ public class OptZ2F {
 		Collections.sort(z5LeftList,comp2);
 		Collections.sort(z6LeftList,comp2);
 		
+		//z1Left
 		Map<String,String> resMap = new HashMap<String,String>();
 		int z1ACount = 0;
 		int z1BCount = 0;
@@ -196,13 +197,17 @@ public class OptZ2F {
 			String type = zLeft.getType();
 			String realType = type.substring(0, 1);
 			Z2F z2f = new Z2F();
-			switch(realType){
-				case "A":z2f = listZ1A.get(z1ACount++);resMap.put(type, z2f.getF());break;
-				case "B":z2f = listZ1B.get(z1BCount++);resMap.put(type, z2f.getF());break;
-				case "C":z2f = listZ1C.get(z1CCount++);resMap.put(type, z2f.getF());break;
+			if(!"C07".equals(type)&&!"C08".equals(type)&&!"C11".equals(type)){
+				switch(realType){
+					case "A":z2f = listZ1A.get(z1ACount++);resMap.put(type, z2f.getF());break;
+					case "B":z2f = listZ1B.get(z1BCount++);resMap.put(type, z2f.getF());break;
+					case "C":z2f = listZ1C.get(z1CCount++);resMap.put(type, z2f.getF());break;
+				}
 			}
+			
 		}
 		
+		//z2Left
 		int z2ACount = 0;
 		int z2BCount = 0;
 		int z2CCount =0;
@@ -211,12 +216,13 @@ public class OptZ2F {
 			String type = zLeft.getType();
 			String realType = type.substring(0, 1);
 			Z2F z2f = new Z2F();
-			switch(realType){
-				case "A":z2f = listZ2A.get(z2ACount++);resMap.put(type, z2f.getF());break;
-				case "B":z2f = listZ2B.get(z2BCount++);resMap.put(type, z2f.getF());break;
-				case "C":z2f = listZ2C.get(z2CCount++);resMap.put(type, z2f.getF());break;
+			if(!"C07".equals(type)&&!"C08".equals(type)&&!"C11".equals(type)){
+				switch(realType){
+					case "A":z2f = listZ2A.get(z2ACount++);resMap.put(type, z2f.getF());break;
+					case "B":z2f = listZ2B.get(z2BCount++);resMap.put(type, z2f.getF());break;
+					case "C":z2f = listZ2C.get(z2CCount++);resMap.put(type, z2f.getF());break;
+				}
 			}
-			
 		}
 		
 		//3
@@ -228,13 +234,15 @@ public class OptZ2F {
 			String type = zLeft.getType();
 			String realType = type.substring(0, 1);
 			Z2F z2f = new Z2F();
-			switch(realType){
-				case "A":z2f = listZ3A.get(z3ACount++);resMap.put(type, z2f.getF());break;
-				case "B":z2f = listZ3B.get(z3BCount++);resMap.put(type, z2f.getF());break;
-				case "C":z2f = listZ3C.get(z3CCount++);resMap.put(type, z2f.getF());break;
+			if(!"C07".equals(type)&&!"C08".equals(type)&&!"C11".equals(type)){
+				switch(realType){
+					case "A":z2f = listZ3A.get(z3ACount++);resMap.put(type, z2f.getF());break;
+					case "B":z2f = listZ3B.get(z3BCount++);resMap.put(type, z2f.getF());break;
+					case "C":z2f = listZ3C.get(z3CCount++);resMap.put(type, z2f.getF());break;
+				}	
 			}
-			
 		}
+		
 		//4
 		int z4ACount = 0;
 		int z4BCount = 0;
@@ -244,13 +252,15 @@ public class OptZ2F {
 			String type = zLeft.getType();
 			String realType = type.substring(0, 1);
 			Z2F z2f = new Z2F();
-			switch(realType){
-				case "A":z2f = listZ4A.get(z4ACount++);resMap.put(type, z2f.getF());break;
-				case "B":z2f = listZ4B.get(z4BCount++);resMap.put(type, z2f.getF());break;
-				case "C":z2f = listZ4C.get(z4CCount++);resMap.put(type, z2f.getF());break;
+			if(!"C07".equals(type)&&!"C08".equals(type)&&!"C11".equals(type)){
+				switch(realType){
+					case "A":z2f = listZ4A.get(z4ACount++);resMap.put(type, z2f.getF());break;
+					case "B":z2f = listZ4B.get(z4BCount++);resMap.put(type, z2f.getF());break;
+					case "C":z2f = listZ4C.get(z4CCount++);resMap.put(type, z2f.getF());break;
+				}
 			}
-			
 		}
+		
 		//5
 		int z5ACount = 0;
 		int z5BCount = 0;
@@ -260,13 +270,15 @@ public class OptZ2F {
 			String type = zLeft.getType();
 			String realType = type.substring(0, 1);
 			Z2F z2f = new Z2F();
-			switch(realType){
-				case "A":z2f = listZ5A.get(z5ACount++);resMap.put(type, z2f.getF());break;
-				case "B":z2f = listZ5B.get(z5BCount++);resMap.put(type, z2f.getF());break;
-				case "C":z2f = listZ5C.get(z5CCount++);resMap.put(type, z2f.getF());break;
+			if(!"C07".equals(type)&&!"C08".equals(type)&&!"C11".equals(type)){
+				switch(realType){
+					case "A":z2f = listZ5A.get(z5ACount++);resMap.put(type, z2f.getF());break;
+					case "B":z2f = listZ5B.get(z5BCount++);resMap.put(type, z2f.getF());break;
+					case "C":z2f = listZ5C.get(z5CCount++);resMap.put(type, z2f.getF());break;
+				}
 			}
-			
 		}
+		
 		//6
 		int z6ACount = 0;
 		int z6BCount = 0;
@@ -276,12 +288,13 @@ public class OptZ2F {
 			String type = zLeft.getType();
 			String realType = type.substring(0, 1);
 			Z2F z2f = new Z2F();
-			switch(realType){
-				case "A":z2f = listZ6A.get(z6ACount++);resMap.put(type, z2f.getF());break;
-				case "B":z2f = listZ6B.get(z6BCount++);resMap.put(type, z2f.getF());break;
-				case "C":z2f = listZ6C.get(z6CCount++);resMap.put(type, z2f.getF());break;
+			if(!"C07".equals(type)&&!"C08".equals(type)&&!"C11".equals(type)){
+				switch(realType){
+					case "A":z2f = listZ6A.get(z6ACount++);resMap.put(type, z2f.getF());break;
+					case "B":z2f = listZ6B.get(z6BCount++);resMap.put(type, z2f.getF());break;
+					case "C":z2f = listZ6C.get(z6CCount++);resMap.put(type, z2f.getF());break;
+				}
 			}
-			
 		}
 		
 		double longestTime = 0;
@@ -297,15 +310,19 @@ public class OptZ2F {
 			double dis = 0;
 			String type = zLeft.getType();
 			String FType = resMap.get(type);
-			for(int j=0;j<list.size();j++){
-				if(list.get(j).getF().equals(FType)){
-					dis2 = list.get(j).getDis();
+			if(!"C07".equals(type)&&!"C08".equals(type)&&!"C11".equals(type)){
+				//去除了c7，c8和c11的车辆耗时的最长时间
+				for(int j=0;j<list.size();j++){
+					if(list.get(j).getF().equals(FType)){
+						dis2 = list.get(j).getDis();
+					}
+				}
+				dis = dis1+dis2;
+				if(longestTime<dis&&dis<100){
+					longestTime = dis;
 				}
 			}
-			dis = dis1+dis2;
-			if(longestTime<dis&&dis<100){
-				longestTime = dis;
-			}
+			
 		}
 		
 		for(int i=0;i<zLeftList.size();i++){
@@ -332,6 +349,8 @@ public class OptZ2F {
 		//总耗时 = 暴露时间求和
 		double sumExpTime = 0;
 		double sumf2z = 0;
+		//最晚到F的时间
+		double lastArrTime = 0;
 		for(int i=0;i<zLeftList.size();i++){
 			ZLeft zLeft = zLeftList.get(i);
 			double expTime = 0;
@@ -370,6 +389,10 @@ public class OptZ2F {
 			}
 			System.out.println(F+" 从Z到F的暴露时间"+z2fExpTime);
 			System.out.println(F+" 所暴露的总时间"+zLeft.getAllExpTime());
+			System.out.println(F+" 最晚到F发射点的时间"+(zLeft.getShouldLeftTime()+z2fExpTime));
+			if(zLeft.getShouldLeftTime()+z2fExpTime>lastArrTime){
+				lastArrTime = zLeft.getShouldLeftTime()+z2fExpTime;
+			}
 			sumExpTime+=zLeft.getAllExpTime();
 			sumf2z+=Math.max(zLeft.getAllowTime(), zLeft.getArrTime());
 			System.out.println();
@@ -377,7 +400,7 @@ public class OptZ2F {
 		
 		System.out.println("F-Z总暴露时间="+sumf2z);
 		System.out.println("F-Z-F总耗时="+sumExpTime);
-		
+		System.out.println("最晚到F的时间="+lastArrTime);
 		
 		System.out.println();
 	}
@@ -440,10 +463,14 @@ public class OptZ2F {
 	            		case 5:zLeft.setZ("Z5");zLeft.setType(split[0]);zLeft.setCanLeftTime(Double.valueOf(split[4]));zLeft.setLoadTime(Double.valueOf(split[3]));zLeft.setAllowTime(Double.valueOf(split[2]));zLeft.setArrTime(Double.valueOf(split[1]));z5LeftList.add(zLeft);break;
 	            		case 6:zLeft.setZ("Z6");zLeft.setType(split[0]);zLeft.setCanLeftTime(Double.valueOf(split[4]));zLeft.setLoadTime(Double.valueOf(split[3]));zLeft.setAllowTime(Double.valueOf(split[2]));zLeft.setArrTime(Double.valueOf(split[1]));z6LeftList.add(zLeft);break;
             		}
-            		zLeftList.add(zLeft);
-            		if(zLeft.getCanLeftTime()!=100){
-            			zLeft.setShouldLeftTime(zLeft.getCanLeftTime());
+            		String type = zLeft.getType();
+            		if(!"C07".equals(type)&&!"C08".equals(type)&&!"C11".equals(type)){
+            			zLeftList.add(zLeft);
+                		if(zLeft.getCanLeftTime()!=100){
+                			zLeft.setShouldLeftTime(zLeft.getCanLeftTime());
+                		}	
             		}
+            		
             	}else{
             		countZ++;
             	}
@@ -619,6 +646,8 @@ public class OptZ2F {
 	}
 	
 	static class Z2F{
+		//发射装置名称
+		String name;
 		//离开的Z点
 		String Z;
 		//去的F点
@@ -628,6 +657,12 @@ public class OptZ2F {
 		//从z到f的距离
 		double dis;
 		
+		public String getName() {
+			return name;
+		}
+		public void setName(String name) {
+			this.name = name;
+		}
 		public String getType() {
 			return type;
 		}
