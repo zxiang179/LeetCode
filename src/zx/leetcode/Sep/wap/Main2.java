@@ -31,8 +31,11 @@ public class Main2 {
 			}
 		}
 		int k = Integer.valueOf(scanner.nextLine());
+		
 		if(sum<k)System.out.println(-1);
 		if(sum==k)System.out.println(0);
+		
+		int dec = sum-k;
 		
 		
 	}
