@@ -1,7 +1,5 @@
 package zx.leetcode.restart;
 
-import zx.leetcode.apri.Hamming_Distance;
-
 public class Number_of_1_Bits {
 	
 	public static int hammingWeight(int n) {
