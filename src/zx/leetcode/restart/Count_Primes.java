@@ -3,6 +3,7 @@ package zx.leetcode.restart;
 public class Count_Primes {
 	
 	public static int countPrimes2(int n){
+		//初始化后默认是false
 		boolean[] isComposite = new boolean[n];
 		int count = 0;
 		for(int i=2;i<n;i++){
