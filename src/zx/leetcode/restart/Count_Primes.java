@@ -46,7 +46,7 @@ public class Count_Primes {
 	}
 
 	public static void main(String[] args) {
-		countPrimes2(1000);
+//		countPrimes2(1000);
 	}
 	
 }
