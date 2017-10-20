@@ -3,7 +3,6 @@ package zx.leetcode.restart;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.annotation.Generated;
 
 public class Pascal_Triangle {
 	
