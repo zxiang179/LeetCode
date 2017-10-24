@@ -11,7 +11,7 @@ public class Path_Sum_III {
 	public int pathSum(TreeNode root, int sum) {
         //判断特殊情况
 		 if(root==null)return 0;
-		 return findPath(root,sum)+findPath(root.left,sum)+findPath(root.right,sum);
+		 return findPath(root,sum)+pathSum(root.left,sum)+pathSum(root.right,sum);
     }
 	
 	public int findPath(TreeNode root,int sum){
