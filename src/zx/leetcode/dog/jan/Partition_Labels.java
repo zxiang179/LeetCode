@@ -3,6 +3,8 @@ package zx.leetcode.dog.jan;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.Test;
+
 public class Partition_Labels {
 	
 	public List<Integer> partitionLabels(String S) {
@@ -28,4 +30,10 @@ public class Partition_Labels {
 		}
 		return list;
     }
+	
+	@Test
+	public void test(){
+		String S = "ababcbacadefegdehijhklij";
+		partitionLabels(S);
+	}
 }

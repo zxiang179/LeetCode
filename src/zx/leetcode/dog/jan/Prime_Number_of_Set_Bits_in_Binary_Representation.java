@@ -9,6 +9,22 @@ import org.junit.Test;
  */
 public class Prime_Number_of_Set_Bits_in_Binary_Representation {
 	
+	
+	public int countPrimeSetBits(int L, int R) {
+		init();
+		int length = R-L+1;
+		int[] binaryInt = new int[length];
+		int countBinary = 0;
+		for(int i=L;i<=R;i++){
+			binaryInt[i-L]=bitCount(i);
+			if(primeList[binaryInt[i-L]]==true){
+				countBinary++;
+			}
+		}
+		return countBinary;
+        
+    }
+	
 	@Test
 	public void test(){
 		int a = 15;
