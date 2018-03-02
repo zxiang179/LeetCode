@@ -31,7 +31,7 @@ public class Coin_Change_322 {
     }
 	
 	public static void main(String[] args) {
-		new Coin_Change_322().coinChange(new int[]{1,2,5}, 11);
+		new Coin_Change_322().coinChange(new int[]{1,2,5}, 3);
 	}
 
 }
