@@ -12,7 +12,8 @@ public class Unique_Paths_62 {
 	 * @return
 	 */
 	public int uniquePaths(int m, int n) {
-        int[][] dp = new int[m+1][n+1];
+        if(m==1||n==1)return 1;
+		int[][] dp = new int[m+1][n+1];
         dp[0][0]=1;
         for(int i=1;i<=m;i++){
         	dp[i][0] = 1;
