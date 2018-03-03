@@ -13,7 +13,7 @@ public class Maximum_Product_Subarray_152 {
 	 */
 	public int maxProduct(int[] nums) {
 		int n = nums.length;
-		int max=0;
+		int max=nums[0];
 		int[] dp_min = new int[n];
 		int[] dp_max = new int[n];
 		dp_min[0]=dp_max[0]=nums[0];			
@@ -24,7 +24,7 @@ public class Maximum_Product_Subarray_152 {
 					nums[i],Math.max(dp_min[i-1]*nums[i], dp_max[i-1]*nums[i]));
 			max = Math.max(dp_max[i], max);
 		}
-		
+	
         return max;
     }
 
