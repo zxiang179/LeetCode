@@ -1,4 +1,4 @@
-package zx.leetcode.mar;
+package zx.leetcode.dog.mar;
 
 public class Maximal_Square_221 {
 	
