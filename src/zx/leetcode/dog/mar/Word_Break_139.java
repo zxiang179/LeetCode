@@ -1,7 +1,11 @@
 package zx.leetcode.dog.mar;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
+
 
 public class Word_Break_139 {
 	
@@ -39,5 +43,28 @@ public class Word_Break_139 {
 		System.out.println(new Word_Break_139().wordBreak(s, wordDict));
 		
 	}
+	
+	@org.junit.Test
+    public void test() throws ParseException{
+    	String tempLeaveDate = "2018-02-05T08:56:35.735Z";
+    	String xq = "4";
+    	String date = tempLeaveDate.substring(0, 10);
+    	int nextMonths = 4*Integer.valueOf(xq);//默认一学期4个月
+    	int currentMonth = Integer.valueOf(tempLeaveDate.substring(5,7));
+    	System.out.println(currentMonth);
+    	
+    	int addedMonth = nextMonths + currentMonth;
+    	int addedYear = 0;
+    	while(addedMonth>=13){
+    		addedMonth -= 12;
+    		addedYear++;
+    	}
+    	int currentYear = Integer.valueOf(tempLeaveDate.substring(0,4));
+    	int year = currentYear + addedYear;
+    	int month = addedMonth;
+    	System.out.println(String.valueOf(year)+"-"+String.valueOf(month)+"-"+tempLeaveDate.substring(8,10));
+    	
+    	
+    }
 
 }
