@@ -2,34 +2,34 @@ package zx.leetcode.dog.mar;
 
 public class Ugly_Number_II_264 {
 	
-	/**
-	 * dp[i] 表示第i个uglyNumber
-	 * 
-	 * 边界
-	 * dp[1] = 1
-	 * dp[2] = 2
-	 * dp[3] = 3
-	 * dp[5] = 5
-	 * 
-	 * 状态转移方程
-	 * dp[i] = min(dp[i-1]*2,dp[i-2]*3,dp[i-3]*5)
-	 * @param n
-	 * @return
-	 */
 	public int nthUglyNumber(int n) {
-        int[] dp = new int[n+1];
-        dp[1] = 1;
-        dp[2] = 2;
-        dp[3] = 3;
-        dp[5] = 5;
-        for(int i=4;i<=n;i++){
-        	dp[i] = Math.min(dp[i-1]*2,Math.min(dp[i-2]*3,dp[i-3]*5));
-        }
-        return dp[n];
+		if(n==0)return 0;
+		int[] uglyNum = new int[n];
+		uglyNum[0] = 1;
+		int factor2 = 2;
+		int factor3 = 3;
+		int factor5 = 5;
+		int index2 = 0;
+		int index3 = 0;
+		int index5 = 0;
+		for(int i=1;i<n;i++){
+			int min = Math.min(factor2, Math.min(factor3, factor5));
+			uglyNum[i] = min;
+			if(min==factor2){
+				factor2 = 2*uglyNum[++index2];
+			}
+			if(min==factor3){
+				factor3 = 3*uglyNum[++index3];
+			}
+			if(min==factor5){
+				factor5 = 5*uglyNum[++index5];
+			}
+		}
+        return uglyNum[n-1];
     }
 	
 	public static void main(String[] args) {
-		new Ugly_Number_II_264().nthUglyNumber(10);
+		System.out.println(new Ugly_Number_II_264().nthUglyNumber(10));
 	}
 
 }
