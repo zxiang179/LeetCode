@@ -1,6 +1,6 @@
 package zx.leetcode.dog.feb;
 
-public class Perfect_Squares_281 {
+public class Perfect_Squares_279 {
 	
 	/**
 	 * dp[i]表示组成i最少需要的平方数个数
@@ -40,7 +40,7 @@ public class Perfect_Squares_281 {
     }
 	
 	public static void main(String[] args) {
-		new Perfect_Squares_281().numSquares(1);
+		new Perfect_Squares_279().numSquares(1);
 	}
 
 }

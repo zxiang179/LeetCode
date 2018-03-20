@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Triangle_87 {
+public class Triangle_120 {
 	
 	/**
 	 * dp[i][j]表示到i行j列最短的路径之和
@@ -57,7 +57,7 @@ public class Triangle_87 {
 		list.add(sublist1);
 		list.add(sublist2);
 		list.add(sublist3);
-		new Triangle_87().minimumTotal(list);
+		new Triangle_120().minimumTotal(list);
 	}
 
 }

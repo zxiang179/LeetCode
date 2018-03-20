@@ -50,7 +50,7 @@ public class Number_of_Longest_Increasing_Subsequence_673 {
     }
 	
 	public static void main(String[] args) {
-		new Number_of_Longest_Increasing_Subsequence_673().findNumberOfLIS(new int[]{1,3,5,4,7});
+		System.out.println(new Number_of_Longest_Increasing_Subsequence_673().findNumberOfLIS(new int[]{1,3,5,4,7}));
 	}
 
 }
