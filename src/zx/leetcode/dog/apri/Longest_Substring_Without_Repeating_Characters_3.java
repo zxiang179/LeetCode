@@ -24,7 +24,6 @@ public class Longest_Substring_Without_Repeating_Characters_3 {
 	
 	public static void main(String[] args) {
 		new Longest_Substring_Without_Repeating_Characters_3().lengthOfLongestSubstring("abcabcaaa");
-		System.out.println();
 	}
 	
 
