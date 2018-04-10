@@ -1,4 +1,4 @@
-package zx.leetcode.dog.yuanjiing;
+package zx.leetcode.dog.yuanjing;
 
 /**
  * Definition for singly-linked list with a random pointer.

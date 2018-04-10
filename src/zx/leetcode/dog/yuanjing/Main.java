@@ -1,4 +1,4 @@
-package zx.leetcode.dog.yuanjiing;
+package zx.leetcode.dog.yuanjing;
 
 import java.util.Scanner;
 
