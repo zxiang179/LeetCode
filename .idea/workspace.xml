@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fed5d154-aa35-4958-8855-d2889a55f644" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Array_Nesting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Most_Frequent_Subtree_Sum$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Most_Frequent_Subtree_Sum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Palindromic_Substrings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Print_Binary_Tree$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Print_Binary_Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Sort_Characters_By_Frequency.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Teemo_Attacking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test13$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test14$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test15$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test19$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test8$ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Test9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/Total_Hamming_Distance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/alibaba/Main$UnilateralLine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/alibaba/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/alibaba/Test1$UnilateralLine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/alibaba/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/alibaba/ThreadTest$A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/alibaba/ThreadTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/didi/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/four_Sum_II.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/meituan/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/netease/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/netease/Test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/pingduoduo/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/pingduoduo/Main1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/pingduoduo/Main3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/pingduoduo/Main4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/toutiao/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Aug/toutiao/Main2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Add_One_Row_to_Tree$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Add_One_Row_to_Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Baseball_Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Binary_Tree_Preorder_Traversal$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Binary_Tree_Preorder_Traversal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Bulb_Switcher_II.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Combination_Sum_III.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Diagonal_Traverse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Employee_Importance$Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Employee_Importance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Find_Peak_Element.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Integer_to_Roman.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Is_Subsequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Longest_Continuous_Increasing_Subsequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Map_Sum_Pairs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Maximum_Length_of_Pair_Chain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Maximum_Swap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Maximum_XOR_of_Two_Numbers_in_an_Array.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Merge_Intervals$Interval.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Merge_Intervals$MyComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Merge_Intervals.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Minimum_Time_Difference.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/Sort_Colors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/chubao/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/iqiyi/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/iqiyi/Main2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/iqiyi/Main3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/iqiyi/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/iqiyi/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/jd/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/jd/Main2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/jd/Main3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/jd/Other.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/jd/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/jd/Students.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/jd/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/jd/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/jd/Test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/GetQueueTime$ComparatorImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/GetQueueTime$Z2F.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/GetQueueTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/OptZ2F$ComparatorI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/OptZ2F$ComparatorII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/OptZ2F$Z2F.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/OptZ2F$ZLeft.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/OptZ2F.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/ReadTxt1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/dierwen/GetQueueTime$ComparatorImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/dierwen/GetQueueTime$Z2F.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/dierwen/GetQueueTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/dierwen/OptZ2F$ComparatorI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/dierwen/OptZ2F$ComparatorII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/dierwen/OptZ2F$Z2F.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/dierwen/OptZ2F$ZLeft.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/dierwen/OptZ2F.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/dierwen/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/dierwen/Test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/disanwen/GetQueueTime$ComparatorImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/disanwen/GetQueueTime$Z2F.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/disanwen/GetQueueTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/disanwen/OptZ2F$ComparatorI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/disanwen/OptZ2F$ComparatorII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/disanwen/OptZ2F$Z2F.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/disanwen/OptZ2F$ZLeft.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/mcm/disanwen/OptZ2F.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/netease/LCS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/netease/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/wap/Main$A_B.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/wap/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/wap/Main2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/Sep/zhaoshangyinhang/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Hamming_Distance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test15$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test20.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test21.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test22.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test23.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test24.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test25.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/Test9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/apri/TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/dec/Binary_Number_with_Alternating_Bits.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/dec/Count_Binary_Substrings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/dec/Trim_a_Binary_Search_Tree$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/dec/Trim_a_Binary_Search_Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/LogSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Loop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test1$ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test11$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test15$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test17$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test20.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test21$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test21.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test22.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test23.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test24.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test25.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test26.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test27.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test28.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test29.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test30.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test31.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test32$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test32.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test33.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test34.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/july/Test9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/MinStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/Test10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/Test11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/Test12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/Test13$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/Test13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/Test14$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/Test14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/Test2$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/Test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/Test3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/Test4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/Test5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/Test6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/Test7$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/Test7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/Test8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/Test9$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/june/Test9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Codec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/MyQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/MyStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Solution$ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test20.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test21.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test22.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test23.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test24.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test25.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test26.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test27.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test28.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test29.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test3$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test30.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/Test9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/may/TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/nov/Self_Dividing_Numbers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/nov/Trim_a_Binary_Search_Tree$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/nov/Trim_a_Binary_Search_Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/oct/Max_Area_of_Island.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/oct/ebay/Main1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/oct/jiaohang/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/oct/pingankeji/Main1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/oct/pingduoduo/Main2$Beer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/oct/pingduoduo/Main2$BeerComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/oct/pingduoduo/Main2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Add_Digits.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Add_String.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Arranging_Coins.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Balanced_Binary_Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Binary_Tree_Level_Order_Traversal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Binary_Tree_Path$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Binary_Tree_Path.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Contains_Duplicate_II.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Convert_a_Number_to_Hexadecimal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Count_Primes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Excel_Sheet_Column_Number.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Excel_Sheet_Column_Title.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Factorial_Trailing_Zeros.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Implement_strStr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Intersection_of_Two_Arrays_II.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Invert_Binary_Tree$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Invert_Binary_Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Isomorphic_Strings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Length_of_Last_Word.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Linked_List_Cycle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Longest_Palindrome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Lowest_Common_Ancestor_of_a_Binary_Search_Tree$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Lowest_Common_Ancestor_of_a_Binary_Search_Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Majority_Element.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Maximum_Depth_of_Binary_Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Merge_Sorted_Array.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Merge_Two_Sorted_Lists.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Minimum_Depth_of_Binary_Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Move_Zeroes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Number_of_1_Bits.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Pascal_Triangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Pascal_Triangle_II.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Path_Sum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Path_Sum_III$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Path_Sum_III.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Plus_One.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Power_of_Two.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Range_Sum_Query.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Remove_Duplicates_From_Sorted_List.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Remove_Element.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Remove_Linked_List_Elements$ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Remove_Linked_List_Elements.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Remove_Nth_Node_From_End_of_List.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Reverse_Bits.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Reverse_Linked_List$ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Reverse_Linked_List.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Reverse_Vowels_of_a_String.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Rotate_Array.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Same_Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Single_Number.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Sum_of_Left_Leaves$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Sum_of_Left_Leaves.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Swap_Nodes_in_Pairs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Symmetric_Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Third_Maximum_Number.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Two_Sum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Valid_Anagram.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Valid_Palindrome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/chicken/restart/Valid_Parentheses.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/apri/Largest_Number_179$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/apri/Largest_Number_179.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/apri/Longest_Substring_Without_Repeating_Characters_3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/apri/Reverse_Words_in_a_String_151.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/apri/Single_Number_136.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/apri/kth_smallest_element_in_a_BST_230$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/apri/kth_smallest_element_in_a_BST_230.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/feb/Best_Time_to_Buy_and_Sell_Stock_with_Cooldown_309.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/feb/Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee_714.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/feb/Coin_Change_322.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/feb/Combination_Sum_IV.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/feb/Delete_an_Earn_740.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/feb/FindLongestPalindrome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/feb/House_Robber_198.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/feb/House_Robber_II_213.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/feb/Keys_Keyboard_650.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/feb/Longest_Increasing_Subsequence_300.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/feb/Longest_Palindromic_Substring_5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/feb/Maximum_Length_of_Repeated_Subarray_718.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/feb/Maximum_Product_Subarray_152.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/feb/Minimum_Path_Sum_64.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/feb/Perfect_Squares_279.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/feb/Predict_the_Winner_486.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/feb/Triangle_120.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/feb/Unique_Binary_Search_Trees_96.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/feb/Unique_Paths_62.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/jan/Find_Anagram_Mappings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/jan/Find_Smallest_Letter_Greater_Than_Target.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/jan/Flood_Fill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/jan/Is_Subsequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/jan/Largest_Number_At_Least_Twice_of_Others.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/jan/MidSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/jan/Min_Cost_Climbing_Stairs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/jan/Minimum_ASCII_Delete_Sum_for_Two_Strings_712.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/jan/Partition_Labels.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/jan/Prime_Number_of_Set_Bits_in_Binary_Representation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/jan/Second_Minimum_Node_In_a_Binary_Tree$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/jan/Second_Minimum_Node_In_a_Binary_Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/jan/Toeplitz_Matrix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/jan/bit1_and_bit2_Characters.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Binary_Tree_Zigzag_Level_Order_Traversal_103$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Binary_Tree_Zigzag_Level_Order_Traversal_103.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal_106$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal_106.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal_105$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal_105.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Contains_Duplicate_III_220.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Copy_List_with_Randow_Pointer_138$RandomListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Copy_List_with_Randow_Pointer_138.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Find_Duplicate_Subtrees_652$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Find_Duplicate_Subtrees_652.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Find_Minimum_in_Rotated_Sorted_Array_153.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Find_Minimum_in_Rotated_Sorted_Array_II_154.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Kth_Largest_Element_in_an_Array_215.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Largest_Divisible_Subset_368.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Linked_List_Cycle_II_142$ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Linked_List_Cycle_II_142.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Longest_Palindromic_Subsequence_516.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Maximal_Square_221.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Merge_k_Sorted_Lists_23$ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Merge_k_Sorted_Lists_23.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Number_of_Longest_Increasing_Subsequence_673.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Path_Sum_2$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Path_Sum_2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Pow_x_n_50.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Search_a_2D_Matrix_II_240.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Search_in_Rotated_Sorted_Array_33.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Sum_Root_to_Leaf_Numbers_129$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Sum_Root_to_Leaf_Numbers_129.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Ugly_Number_II_264.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Unique_Paths_II_63.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Wiggle_Subsequence_376.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Word_Break_139.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/mar/Word_Search_79.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/meituan/StringLength.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/microsoft/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/microsoft/Main2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/netease/Line.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/netease/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/netease/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/netease/Rect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/yuanjing/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/yuanjing/Solution$RandomListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/dog/yuanjing/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/reflect/Project.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/reflect/ReflectUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/sort/MergeSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/sort/QuickSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zx/leetcode/sort/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zx/leetcode/chicken/Aug/pingduoduo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zx/leetcode/chicken/Aug/pingduoduo/UglyNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zx/leetcode/dog/nowcoder/sword2offer/Solution7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zx/leetcode/dog/nowcoder/sword2offer/Solution7.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="QuickSort.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/zx/leetcode/dog/june/QuickSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="G:/IDEA_workspace/demo2" value="1517886221351" />
+      </map>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Code maturity issuesJava</id>
+          </State>
+          <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Javadoc issuesJava</id>
+          </State>
+          <State>
+            <id>Performance issuesJava</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring AOPSpring</id>
+          </State>
+          <State>
+            <id>TestNGJava</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="dog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="dog" type="462c0819:PsiDirectoryNode" />
+              <item name="june" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="H:/" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="zx.leetcode.dog.june.QuickSort" />
+      <module name="LeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zx.leetcode.dog.june.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.QuickSort" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fed5d154-aa35-4958-8855-d2889a55f644" name="Default" comment="" />
+      <created>1528341550714</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1528341550714</updated>
+      <workItem from="1528341553750" duration="39000" />
+      <workItem from="1528353025597" duration="320000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="359000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1920" height="1057" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" weight="0.32967034" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.253212" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/zx/leetcode/chicken/Aug/pingduoduo/UglyNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zx/leetcode/dog/june/QuickSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
