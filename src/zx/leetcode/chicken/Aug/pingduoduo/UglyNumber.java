@@ -1,17 +1,17 @@
-﻿package zx.leetcode.chicken.Aug.pingduoduo;
+package zx.leetcode.chicken.Aug.pingduoduo;
 
 import java.util.Scanner;
 
 public class UglyNumber {
-	
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		int count = scanner.nextInt();
-		int[] nums = new int[count];
-		for(int i=0;i<count;i++){
-			nums[i]=scanner.nextInt();
-		}
-		
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int count = scanner.nextInt();
+        int[] nums = new int[count];
+        for(int i=0;i<count;i++){
+            nums[i]=scanner.nextInt();
+        }
+
         int max1 = Integer.MIN_VALUE, max2 = Integer.MIN_VALUE, max3 = Integer.MIN_VALUE, min1 = Integer.MAX_VALUE, min2 = Integer.MAX_VALUE;
         for (int n : nums) {
             if (n > max1) {
@@ -34,6 +34,6 @@ public class UglyNumber {
         }
         System.out.println(Math.max(max1*max2*max3, max1*min1*min2));
 
-	}
-	
+    }
+
 }
