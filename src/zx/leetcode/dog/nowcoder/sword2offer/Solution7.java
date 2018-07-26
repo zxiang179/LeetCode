@@ -39,6 +39,8 @@ public class Solution7 {
 			 if(p1.val==p2.val) {
 				 return p1;
 			 }
+			 p1 = p1.next;
+			 p2 = p2.next;
 		 }
 		 return null;
     }

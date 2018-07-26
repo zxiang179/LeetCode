@@ -1,6 +1,7 @@
 package zx.leetcode.dog.nowcoder.sword2offer;
 
 public class Solution8 {
+<<<<<<< HEAD
 	
 	//dp[i] = dp[i-1] + dp[i-2]
 	//dp[1] = 1
@@ -14,5 +15,7 @@ public class Solution8 {
 		}
 		return dp[target];
     }
+=======
+>>>>>>> af9bd192f87c64a5aac988db6dfa384a4adf9327
 
 }
